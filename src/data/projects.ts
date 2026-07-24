@@ -6,7 +6,7 @@ import type { Project } from "@/types";
 export const mockProjects: Project[] = [
   {
     id: "quantumways",
-    category: "Backend & API",
+    category: "Web",
     title: "Quantumways Builders Inventory",
     description:
       "Developed a RESTful API for QuantumWays Builders to centralize the lifecycle of construction resources within a unified management system. This digital backbone replaces manual, error-prone tracking with a structured data environment, ensuring strict data integrity and secure resource oversight.",
@@ -17,7 +17,7 @@ export const mockProjects: Project[] = [
   },
   {
     id: "kidneycare",
-    category: "Backend & API",
+    category: "Web",
     title: "Kidneycare",
     description:
       "Scalable Django REST backend replacing spreadsheet workflows with automated ORM data linking, optimized endpoints, and role-based access for a multi-site repair operation.",

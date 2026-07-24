@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-export const PROJECT_CATEGORIES = ["All", "Web", "Mobile", "Backend & API"] as const;
+export const PROJECT_CATEGORIES = ["All", "Web", "Mobile"] as const;
 export type CategoryFilter = (typeof PROJECT_CATEGORIES)[number];
 
 interface UIState {
