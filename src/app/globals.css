@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  --color-bg: #090d16;
+  --color-surface: #0f172a;
+  --color-surface-raised: #131b2e;
+  --color-border: #1e293b;
+  --color-heading: #f8fafc;
+  --color-body: #94a3b8;
+  --color-muted: #64748b;
+  --color-cyan: #06b6d4;
+  --color-indigo: #6366f1;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-body);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-cyan);
+  color: var(--color-bg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-cyan);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@keyframes drift {
+  0% { transform: translate3d(-5%, -5%, 0) scale(1); }
+  50% { transform: translate3d(5%, 3%, 0) scale(1.08); }
+  100% { transform: translate3d(-5%, -5%, 0) scale(1); }
+}
+
+@keyframes drift-alt {
+  0% { transform: translate3d(4%, 4%, 0) scale(1.05); }
+  50% { transform: translate3d(-4%, -2%, 0) scale(1); }
+  100% { transform: translate3d(4%, 4%, 0) scale(1.05); }
+}
+
+.shader-field {
+  animation: drift 22s ease-in-out infinite;
+}
+
+.shader-field-alt {
+  animation: drift-alt 26s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
