@@ -50,7 +50,7 @@ function ProjectCard({ project }: { project: Project }) {
 
       <div className="flex flex-1 flex-col gap-3 p-5">
         <h3 className="text-lg font-semibold text-heading">{project.title}</h3>
-        <p className="flex-1 text-sm leading-relaxed text-body">{project.description}</p>
+        <p className=" flex-1 text-sm leading-relaxed text-body">{project.description}</p>
 
         <ul className="flex flex-wrap gap-2 pt-1">
           {project.stack.map((tech) => (
@@ -140,9 +140,11 @@ export default function Projects() {
         )}
 
         {!isLoading && (
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 columns-1 gap-6 sm:columns-2 lg:columns-3 space-y-6">
             {filtered.map((project) => (
-              <ProjectCard key={project.id} project={project} />
+              <div key={project.id} className="break-inside-avoid">
+                <ProjectCard project={project} />
+              </div>
             ))}
           </div>
         )}
