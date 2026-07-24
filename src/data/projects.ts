@@ -11,7 +11,13 @@ export const mockProjects: Project[] = [
     description:
       "Developed a RESTful API for QuantumWays Builders to centralize the lifecycle of construction resources within a unified management system. This digital backbone replaces manual, error-prone tracking with a structured data environment, ensuring strict data integrity and secure resource oversight.",
     image: "/assets/quantumways.png",
-    stack: ["Python", "Django", "Django Rest Framework", "PostgreSQL", "SimpleJWT"],
+    stack: [
+      "Python",
+      "Django",
+      "Django Rest Framework",
+      "PostgreSQL",
+      "SimpleJWT",
+    ],
     liveUrl: "https://qwb-inventory-web-v2.vercel.app/auth/login",
     githubUrl: "https://github.com/mrtnbtstaa/quantumways-api",
   },
@@ -29,7 +35,7 @@ export const mockProjects: Project[] = [
       "Django REST Framework",
       "PostgreSQL",
       "Websocket",
-      "SimpleJWT"
+      "SimpleJWT",
     ],
     liveUrl: "https://kidneycare-web.vercel.app/auth/login",
     githubUrl: "https://github.com/mrtnbtstaa/kidneycare-api",
@@ -54,5 +60,27 @@ export const mockProjects: Project[] = [
     ],
     liveUrl: null,
     githubUrl: "https://github.com/mrtnbtstaa/FeatureHub",
+  },
+  {
+    id: "xevcurity",
+    category: "Mobile",
+    title: "Xev-curity",
+    description:
+      "Developed a comprehensive cross-platform mobile application using Flutter and PHP, integrating a lost-and-found system with digital incident reporting backed by secure, session-based authentication to safeguard user data and restrict unauthorized platform access. By incorporating image uploads, user identification, and recovery tracking alongside rich-text incident reports with media attachments, the application streamlined item-matching workflows, expedited successful item returns, and accelerated administrative response times for security concerns.",
+    image: "/assets/xevcurity.png",
+    stack: ["PHP", "Dart", "Flutter"],
+    liveUrl: null,
+    githubUrl: "https://github.com/mrtnbtstaa/xev-curity",
+  },
+  {
+    id: "hoaunity",
+    category: "Web",
+    title: "Hoa-Unity",
+    description:
+      "Engineered a community management platform built with native PHP, featuring an amenity booking system to streamline facility reservations—such as clubhouses and basketball courts—and eliminate schedule conflicts. The application incorporates a community issue reporting module with photo attachments and real-time status tracking alongside a centralized service request system for repair workflows, accelerating maintenance dispatch times and organizing pipelines. To ensure strict administrative accountability, the platform also integrates a comprehensive activity logging system that captures secretary, treasurer, and auditor actions for complete operational transparency.",
+    image: "/assets/hoaunity.png",
+    stack: ["PHP", "Bootstrap"],
+    liveUrl: null,
+    githubUrl: "https://github.com/mrtnbtstaa/hoa-unity",
   },
 ];
