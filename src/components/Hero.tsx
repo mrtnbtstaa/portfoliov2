@@ -43,11 +43,11 @@ export default function Hero() {
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </a>
           <a
-            href="#contact"
+            href="/assets/Martin_Bautista_CV.pdf"
             className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-3 font-mono text-sm font-medium text-heading transition-colors hover:border-cyan/50 hover:text-cyan"
           >
-            <Mail className="h-4 w-4" />
-            Get in Touch
+            {/* <Mail className="h-4 w-4" /> */}
+            Resume 
           </a>
         </div>
       </div>
