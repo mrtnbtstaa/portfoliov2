@@ -26,7 +26,7 @@ export const mockProjects: Project[] = [
     category: "Web",
     title: "Kidneycare",
     description:
-      "Scalable Django REST backend replacing spreadsheet workflows with automated ORM data linking, optimized endpoints, and role-based access for a multi-site repair operation.",
+      "Designed and deployed a HIPAA-compliant healthcare platform featuring a secure, JWT-based authentication system to manage user sessions and safeguard sensitive medical data. The platform incorporates a centralized patient-provider appointment scheduling module that streamlines bookings, minimizes administrative overhead, and eliminates schedule conflicts. Additionally, it integrates a real-time chat system powered by WebSocket technology, enabling instant provider communication to improve medical inquiry response times and boost patient engagement.",
     image:
       "/assets/kidneycare.png",
     stack: [
