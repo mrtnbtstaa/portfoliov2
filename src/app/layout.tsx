@@ -16,9 +16,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "dev.portfolio — Full-Stack & Game Developer",
+  title: "dev.portfolio — Full-Stack Web Developer",
   description:
-    "Full-stack & game developer — Python/Django, Unity/C#, React/Supabase, and AI automation.",
+    "Full-Stack Web Developer",
 };
 
 export default function RootLayout({
